@@ -580,7 +580,6 @@ header {
     display: flex;
     justify-content: space-between;
     flex-wrap: unset;
-    justify-content: space-between;
   }
 }
 
@@ -783,6 +782,16 @@ address {
 }
 
 /* позиционирование Чем мы занимаемся */
+.todo {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .todo {
+    display: flex;
+  }
+}
+
 .todo-profession-name {
   margin-top: 10px;
 }
@@ -822,27 +831,62 @@ address {
 }
 
 .section-team-list {
-  display: flex;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .section-team-list {
+    max-width: 738px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-team-list {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: unset;
+  }
 }
 
 .section-team-list > li {
-  width: 270px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.section-team-list > li:not(:last-child) {
-  margin-right: 30px;
-}
-
 .team {
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 .team-detail {
   text-align: center;
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.team-foto {
+  width: 450px;
+  height: 460px;
+}
+
+@media (min-width: 768px) {
+  .team-foto {
+    width: 739px;
+    height: 780px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .team-foto {
+    width: 270px;
+    height: 260px;
+  }
 }
 
 .social-item-svg {
@@ -882,8 +926,27 @@ address {
 /* Разметка и позиционирование Постоянные Клиенты */
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .clients-list {
+    max-width: 738px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-list {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: unset;
+  }
 }
 
 .clients-link {
@@ -891,8 +954,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #AFB1B8;
-  border: 1px solid #AFB1B8;
+  fill: #afb1b8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
   height: 90px;
@@ -904,7 +967,9 @@ address {
   border: 1px solid #2196F3;
 }
 
-.clients-item:not(:last-child) {
-  margin-right: 30px;
+@media (min-width: 1200px) {
+  .clients-item .clients-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,4 +1,10 @@
 /* позиционирование Чем мы занимаемся */
+.todo {
+  display: none;
+  @include for-size(desktop) {
+    display: flex;
+  }
+}
 .todo-profession-name {
   margin-top: 10px;
 }
@@ -29,5 +35,5 @@
   height: 70px;
   width: 100%;
   align-items: center;
-  justify-content: center;   
+  justify-content: center;
 }
