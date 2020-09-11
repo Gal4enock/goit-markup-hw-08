@@ -1,0 +1,64 @@
+/* Преимущества */
+.item-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color:$title-text-color;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+  
+.item-details {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.name, .todo-profession-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: none;
+}
+  /* позиционирование Преимуществ */
+.advant {
+  padding-bottom: 0px;  
+}
+.list-details {
+  display: flex;
+  justify-content: space-between;
+  li {
+    width: 270px;  
+  }
+  p {
+    margin-top: 0;
+    text-align: left;  
+  }
+  &-item::before {
+    display: block;
+    content:''; 
+    height: 120px;
+    background-color: #F5F4FA;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+@mixin centred {
+  background-repeat: no-repeat;
+  background-position: center;  
+}
+.satelit::before {
+  background-image: url(../img/antenna.svg);
+  @include centred;
+}
+.clock::before {
+  background-image: url(../img/clock.svg);
+  @include centred;
+}
+.comp::before {
+  background-image: url(../img/diagram.svg);
+  @include centred;   
+}
+.astronaut::before {
+  background-image: url(../img/astronaut.svg);
+  @include centred; 
+}

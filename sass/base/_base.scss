@@ -1,0 +1,82 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+}
+body {
+  margin: 0;
+  background-color: #FFFFFF;
+  color: $primery-text-color;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.03em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* стиль ссылок*/
+a {
+  color:$title-text-color;
+    text-decoration: none;
+    transition: all 250ms linear;
+    &:hover, &:focus {
+      color: $accent-color;
+    } 
+}
+/*кнопка*/
+.button{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover, &:focus {
+    color: $other-color;
+    background-color: $accent-color; }
+}
+h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important; 
+  width: 1px !important; 
+  overflow: hidden;
+}
+/* стиль оглавлений секций*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.22;
+  margin-bottom: 50px;
+}
+.section-title, .name{
+  color:$title-text-color;
+  text-align: center;
+  margin-top: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}

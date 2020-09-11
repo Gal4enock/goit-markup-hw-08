@@ -1,0 +1,25 @@
+/* Разметка и позиционирование Постоянные Клиенты */
+.clients-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clients-link {
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    width: 170px;
+    height: 90px;
+    transition: all 250ms linear;
+    &:hover,&:focus {
+        fill: $accent-color;
+        border: 1px solid $accent-color;
+    }
+}
+.clients-item:not(:last-child) {
+    margin-right: 30px;
+}

@@ -1,0 +1,107 @@
+/* стиль футера*/
+footer {
+  background-color: $footer-background;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .social-link {
+    background-color:rgba(255, 255, 255, 0.1);}
+  .social-item-svg{
+    fill: $other-color;}
+  .social-links-list{
+    justify-content: left;}
+  }
+.footer {
+  display: flex;
+  justify-content: space-between;
+  &-link-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $other-color;
+  margin-bottom: 20px;}
+  &-item {
+    li:not(:last-child) {
+      margin-bottom: 9px;}
+    &:last-child {
+      min-width: 540px;}
+    &:not(:last-child) {
+      margin-right: 30px;}}
+  &-sign-form {
+  display: flex;}
+  &-item {
+    width: 270px;}
+}
+
+.logo-footer {
+  color: $other-color;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 20px;
+  }
+.post-adres {
+  font-size: 14px;
+  line-height: 1.7;
+  color: $other-color;
+}
+.contact-us{
+  font-size: 14px;
+  line-height: 1.7;
+  color: $footer-color; 
+}
+.join{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: $other-color;  
+}
+address {
+  font-style: normal
+}
+.padding {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.sign-button {
+  height: 50px;
+  width: 200px;
+  background-color: $accent-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  color: $other-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  fill: $other-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover,&:focus {
+    background-color: $other-color;
+    color: $accent-color;
+    fill: $accent-color;}
+}
+.send-item-svg {
+  fill: currentColor;
+  &:hover,&:focus {fill: $accent-color;}
+}
+
+.sign-form-input {
+  height: 50px;
+  width: 358px;
+  margin-right: 12px;
+  background: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+

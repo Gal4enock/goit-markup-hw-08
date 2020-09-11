@@ -1,0 +1,33 @@
+/* позиционирование Чем мы занимаемся */
+.todo-profession-name {
+  margin-top: 10px;
+}
+.todo-section-list {
+  display: flex;
+}
+.todo-section-list li {
+  width: 370px;
+}
+.todo-section-list li:not(:last-child) {
+  margin-right: 30px;
+}
+.todo-list-item {
+  position: relative;
+}
+.todo-description {
+  display: flex;
+  position: absolute;
+  bottom: 0px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $other-color;
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;   
+}

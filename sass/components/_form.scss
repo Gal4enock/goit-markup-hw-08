@@ -1,0 +1,107 @@
+/* ---------Стилизация формы------- */
+.form {
+  padding: 40px;
+  &-field{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 18px;}
+  &-lable {
+  font-family: Roboto;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: #757575;
+  margin-bottom: 4px;}
+  &-title {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  text-transform: none;}
+}
+@mixin bordered {
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@mixin focused {
+  outline: none;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+ border-color: $accent-color;
+}
+.form-input {
+  height: 40px;
+  padding-left: 42px;
+  @include bordered;
+  &:hover,&:focus {
+    @include focused; }
+}
+.coment-input {
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  @include bordered;
+  &:hover,&:focus {
+    @include focused; }
+}
+.form-input:focus +,.form-input:hover + {
+  & .form-item-svg {
+   fill: $accent-color;
+   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+ }
+.form-item-svg {
+  display: block;
+  fill: $title-text-color;
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.input-svg {
+  position: relative;
+  width: auto;
+}
+.contract {
+  text-decoration-line: underline;
+  color: $accent-color;
+}
+.agreement-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  &::before {
+    content: "";
+    display: inline-block;
+    height: 16px;
+    width: 15px;
+    border: 2px solid $title-text-color;
+    border-radius: 2px;
+    margin-right: 8.38px;}
+}
+.chackbox:checked + .agreement-text::before {
+  border-color: $accent-color;
+  background-image: url(../img/check.svg);
+  background-position: center;
+}
+.submit-button {
+  display: block;
+  background-color: $accent-color;
+  color: $other-color;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+}

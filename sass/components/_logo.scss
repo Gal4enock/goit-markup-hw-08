@@ -1,0 +1,12 @@
+/* стиль логотипа*/
+.logo {
+  font-size: 26px;
+  line-height: 1.19;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  color: $title-text-color;
+  margin-right: 93px;
+  &-word {
+   color: $accent-color;   
+  }
+}
