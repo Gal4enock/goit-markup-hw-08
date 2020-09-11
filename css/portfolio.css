@@ -131,9 +131,15 @@ h3 {
   font-size: 24px;
   line-height: 1.16;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #212121;
-  margin-right: 93px;
+  margin-right: 88px;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-word {
@@ -211,13 +217,19 @@ header {
 
 .header-site-address {
   display: none;
-  align-items: center;
-  justify-items: center;
 }
 
 @media (min-width: 768px) {
   .header-site-address {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-site-address {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -238,6 +250,13 @@ header {
   .header-site-address a {
     font-size: 12px;
     line-height: 1.16;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-site-address a {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 

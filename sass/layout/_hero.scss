@@ -15,7 +15,8 @@
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png), url(../img/Background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png),
+    url(../img/Background.jpg);
   max-width: 1600px;
   background-size: cover;
   &-title {
@@ -24,16 +25,25 @@
     text-align: center;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.615;
+    @include for-size(desktop) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
     letter-spacing: 0.06em;
     margin-top: 0;
     margin-bottom: 30px;
     &-button {
-      max-width: 696px;
+      max-width: 360px;
       text-align: center;
       margin-left: auto;
-      margin-right: auto;}}
+      margin-right: auto;
+      @include for-size(desktop) {
+        max-width: 696px;
+      }
+    }
+  }
   margin-left: auto;
   margin-right: auto;
 }

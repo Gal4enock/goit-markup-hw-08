@@ -6,15 +6,15 @@ header {
 .header-site-address {
   display: none;
   // display: inline-flex;
-  align-items: center;
-  justify-items: center;
 
   @include for-size(tablet-landscape) {
     display: block;
   }
 
-  @include for-size(desctop) {
+  @include for-size(desktop) {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 
   a {
@@ -35,7 +35,7 @@ header {
       line-height: 1.16;
     }
 
-    @include for-size(desctop) {
+    @include for-size(desktop) {
       font-size: 14px;
       line-height: 1.14;
     }

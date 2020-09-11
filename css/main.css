@@ -131,9 +131,15 @@ h3 {
   font-size: 24px;
   line-height: 1.16;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: #212121;
-  margin-right: 93px;
+  margin-right: 88px;
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    margin-right: 93px;
+  }
 }
 
 .logo-word {
@@ -401,13 +407,19 @@ header {
 
 .header-site-address {
   display: none;
-  align-items: center;
-  justify-items: center;
 }
 
 @media (min-width: 768px) {
   .header-site-address {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-site-address {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
@@ -428,6 +440,13 @@ header {
   .header-site-address a {
     font-size: 12px;
     line-height: 1.16;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header-site-address a {
+    font-size: 14px;
+    line-height: 1.14;
   }
 }
 
@@ -487,18 +506,31 @@ header {
   text-align: center;
   font-style: normal;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.615;
   letter-spacing: 0.06em;
   margin-top: 0;
   margin-bottom: 30px;
 }
 
+@media (min-width: 1200px) {
+  .hero-title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
 .hero-title-button {
-  max-width: 696px;
+  max-width: 360px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .hero-title-button {
+    max-width: 696px;
+  }
 }
 
 /* Преимущества */
@@ -515,7 +547,8 @@ header {
   line-height: 1.71;
 }
 
-.name, .todo-profession-name {
+.name,
+.todo-profession-name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -529,12 +562,48 @@ header {
 }
 
 .list-details {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .list-details {
+    max-width: 738px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-details {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: unset;
+    justify-content: space-between;
+  }
 }
 
 .list-details li {
-  width: 270px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .list-details li {
+    width: 354px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .list-details li {
+    width: 270px;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .list-details p {
@@ -544,9 +613,9 @@ header {
 
 .list-details-item::before {
   display: block;
-  content: '';
+  content: "";
   height: 120px;
-  background-color: #F5F4FA;
+  background-color: #f5f4fa;
   margin-bottom: 30px;
   background-repeat: no-repeat;
   background-position: center;

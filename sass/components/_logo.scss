@@ -5,10 +5,14 @@
   font-size: 24px;
   line-height: 1.16;
   font-weight: 700;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   color: $title-text-color;
-  margin-right: 93px;
+  margin-right: 88px;
+  @include for-size(desktop) {
+    margin-right: 93px;
+  }
+
   &-word {
-   color: $accent-color;   
+    color: $accent-color;
   }
 }
