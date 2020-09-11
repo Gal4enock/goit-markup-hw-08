@@ -8,6 +8,7 @@
 *,
 *::before,
 *::after {
+  outline: 1px solid red;
   margin: 0;
   padding: 0;
 }
@@ -94,17 +95,41 @@ h3 {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 /* стиль логотипа*/
 .logo {
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   font-weight: 700;
   font-family: 'Raleway', sans-serif;
   color: #212121;
@@ -129,6 +154,12 @@ h3 {
   margin-right: 0;
 }
 
+.site-nav {
+  display: none;
+  align-items: center;
+  justify-items: center;
+}
+
 .site-nav a {
   font-size: 14px;
   line-height: 1.14;
@@ -138,6 +169,12 @@ h3 {
 
 .site-nav a:hover, .site-nav a:focus {
   color: #2196F3;
+}
+
+@media (min-width: 768px) {
+  .site-nav {
+    display: inline-flex;
+  }
 }
 
 .site-nav .link.current {
@@ -161,21 +198,27 @@ h3 {
 }
 
 /* Расположение шапки */
-.site-nav, nav {
-  display: inline-flex;
-  align-items: center;
-  justify-items: center;
-}
-
 nav {
   justify-content: flex-start;
   align-items: center;
 }
 
 header {
-  border: 1px solid #ECECEC;
+  border: 1px solid #ececec;
   padding-bottom: 25px;
   padding-top: 24px;
+}
+
+.header-site-address {
+  display: none;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (min-width: 768px) {
+  .header-site-address {
+    display: block;
+  }
 }
 
 .header-site-address a {
@@ -191,6 +234,13 @@ header {
   color: #2196F3;
 }
 
+@media (min-width: 768px) {
+  .header-site-address a {
+    font-size: 12px;
+    line-height: 1.16;
+  }
+}
+
 .header-site-address-item:not(:last-child) {
   margin-right: 50px;
 }
@@ -204,13 +254,9 @@ header {
 }
 
 /* Расположение шапки */
-.header-site-address, .header-address-section {
-  display: inline-flex;
+.header-address-section {
   align-items: center;
   justify-items: center;
-}
-
-.header-address-section {
   justify-content: flex-end;
   margin-left: auto;
 }

@@ -1,7 +1,8 @@
 @import "./utils/variables";
+@import "./utils/mixin";
 @import "./base/base";
 @import "./components/logo";
-@import "./components/navigation.scss";
+@import "./components/navigation";
 @import "./components/modal";
 @import "./components/form";
 @import "./layout/header";
