@@ -23,6 +23,8 @@ footer {
   @include for-size(tablet-landscape) {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
   }
   @include for-size(desktop) {
     display: flex;
@@ -41,9 +43,9 @@ footer {
     text-align: center;
     &:not(:last-child) {
       margin-bottom: 60px;
-    }
-    @include for-size(desktop) {
-      margin-bottom: 0;
+      @include for-size(desktop) {
+        margin-bottom: 0;
+      }
     }
     li:not(:last-child) {
       @include for-size(desktop) {
@@ -70,6 +72,11 @@ footer {
   }
   &-item {
     width: 100%;
+    @include for-size(tablet-landscape) {
+      width: 369px;
+      align-items: center;
+      justify-content: center;
+    }
     @include for-size(desktop) {
       width: 270px;
     }
@@ -146,7 +153,13 @@ address {
 
 .sign-form-input {
   height: 50px;
-  width: 358px;
+  width: 100%;
+  @include for-size(tablet-landscape) {
+    width: 450px;
+  }
+  @include for-size(desktop) {
+    width: 358px;
+  }
   margin-right: 12px;
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -158,4 +171,12 @@ address {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+.sign {
+  @include for-size(tablet-landscape) {
+    width: 450px;
+  }
+  @include for-size(desktop) {
+    width: 358px;
+  }
 }
