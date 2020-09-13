@@ -1064,6 +1064,18 @@ address {
   margin-right: 30px;
 }
 
+@media (min-width: 768px) {
+  .clients-item:not(:nth-child(2n + 2)) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-item:not(:nth-child(2n + 2)) {
+    margin-right: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .clients-item:not(:last-child) {
     margin-right: 30px;
@@ -1073,6 +1085,12 @@ address {
 @media (min-width: 768px) {
   .clients-item:not(:nth-child(3n + 3)) {
     padding-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-item:not(:nth-child(3n + 3)) {
+    padding-right: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */

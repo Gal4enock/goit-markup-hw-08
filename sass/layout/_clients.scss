@@ -43,6 +43,12 @@
 }
 .clients-item:not(:nth-child(2n + 2)) {
   margin-right: 30px;
+  @include for-size(tablet-landscape) {
+    margin-right: 0;
+  }
+  @include for-size(desktop) {
+    margin-right: 0;
+  }
 }
 
 .clients-item:not(:last-child) {
@@ -53,5 +59,8 @@
 .clients-item:not(:nth-child(3n + 3)) {
   @include for-size(tablet-landscape) {
     padding-right: 30px;
+  }
+  @include for-size(desktop) {
+    padding-right: 0;
   }
 }
