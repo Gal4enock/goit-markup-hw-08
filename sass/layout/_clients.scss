@@ -9,7 +9,7 @@
     max-width: 738px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   @include for-size(desktop) {
@@ -21,23 +21,37 @@
 }
 .clients-link {
   display: flex;
-  display: flex;
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   transition: all 250ms linear;
+  @include for-size(tablet-landscape) {
+    width: 226px;
+  }
+  @include for-size(desktop) {
+    width: 170px;
+  }
   &:hover,
   &:focus {
     fill: $accent-color;
     border: 1px solid $accent-color;
   }
 }
-.clients-item .clients-item:not(:last-child) {
+.clients-item:not(:nth-child(2n + 2)) {
+  margin-right: 30px;
+}
+
+.clients-item:not(:last-child) {
   @include for-size(desktop) {
     margin-right: 30px;
+  }
+}
+.clients-item:not(:nth-child(3n + 3)) {
+  @include for-size(tablet-landscape) {
+    padding-right: 30px;
   }
 }

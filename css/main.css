@@ -951,7 +951,7 @@ address {
     max-width: 738px;
     flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 }
 
@@ -966,15 +966,26 @@ address {
 
 .clients-link {
   display: flex;
-  display: flex;
   align-items: center;
   justify-content: center;
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   transition: all 250ms linear;
+}
+
+@media (min-width: 768px) {
+  .clients-link {
+    width: 226px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-link {
+    width: 170px;
+  }
 }
 
 .clients-link:hover, .clients-link:focus {
@@ -982,9 +993,19 @@ address {
   border: 1px solid #2196F3;
 }
 
+.clients-item:not(:nth-child(2n + 2)) {
+  margin-right: 30px;
+}
+
 @media (min-width: 1200px) {
-  .clients-item .clients-item:not(:last-child) {
+  .clients-item:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+@media (min-width: 768px) {
+  .clients-item:not(:nth-child(3n + 3)) {
+    padding-right: 30px;
   }
 }
 /*# sourceMappingURL=main.css.map */
