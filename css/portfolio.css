@@ -301,12 +301,32 @@ footer .social-item-svg {
 }
 
 footer .social-links-list {
-  justify-content: left;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1200px) {
+  footer .social-links-list {
+    justify-content: left;
+  }
 }
 
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .footer-link-title {
@@ -319,29 +339,61 @@ footer .social-links-list {
   margin-bottom: 20px;
 }
 
-.footer-item li:not(:last-child) {
-  margin-bottom: 9px;
-}
-
-.footer-item:last-child {
-  min-width: 540px;
+.footer-item {
+  text-align: center;
 }
 
 .footer-item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .footer-item {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-item li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-item:last-child {
+    min-width: 540px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .footer-sign-form {
-  display: flex;
+  display: block;
+}
+
+@media (min-width: 1200px) {
+  .footer-sign-form {
+    display: flex;
+  }
 }
 
 .footer-item {
-  width: 270px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .footer-item {
+    width: 270px;
+  }
 }
 
 .logo-footer {
   color: #FFFFFF;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   display: block;
@@ -390,9 +442,17 @@ address {
   line-height: 1.875;
   letter-spacing: 0.06em;
   fill: #FFFFFF;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 1200px) {
+  .sign-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .sign-button:hover, .sign-button:focus {
@@ -413,13 +473,19 @@ address {
   height: 50px;
   width: 358px;
   margin-right: 12px;
-  background: #2F303A;
+  background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media (min-width: 1200px) {
+  .sign-form-input {
+    padding-left: 16px;
+  }
 }
 
 .social-item-svg {

@@ -4,64 +4,106 @@ footer {
   padding-top: 60px;
   padding-bottom: 60px;
   .social-link {
-    background-color:rgba(255, 255, 255, 0.1);}
-  .social-item-svg{
-    fill: $other-color;}
-  .social-links-list{
-    justify-content: left;}
+    background-color: rgba(255, 255, 255, 0.1);
   }
+  .social-item-svg {
+    fill: $other-color;
+  }
+  .social-links-list {
+    justify-content: center;
+    align-items: center;
+    @include for-size(desktop) {
+      justify-content: left;
+    }
+  }
+}
 .footer {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+
+  @include for-size(tablet-landscape) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @include for-size(desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
   &-link-title {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: $other-color;
-  margin-bottom: 20px;}
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $other-color;
+    margin-bottom: 20px;
+  }
   &-item {
-    li:not(:last-child) {
-      margin-bottom: 9px;}
-    &:last-child {
-      min-width: 540px;}
+    text-align: center;
     &:not(:last-child) {
-      margin-right: 30px;}}
+      margin-bottom: 60px;
+    }
+    @include for-size(desktop) {
+      margin-bottom: 0;
+    }
+    li:not(:last-child) {
+      @include for-size(desktop) {
+        margin-bottom: 9px;
+        // justify-content: left;
+      }
+    }
+    &:last-child {
+      @include for-size(desktop) {
+        min-width: 540px;
+      }
+    }
+    &:not(:last-child) {
+      @include for-size(desktop) {
+        margin-right: 30px;
+      }
+    }
+  }
   &-sign-form {
-  display: flex;}
+    display: block;
+    @include for-size(desktop) {
+      display: flex;
+    }
+  }
   &-item {
-    width: 270px;}
+    width: 100%;
+    @include for-size(desktop) {
+      width: 270px;
+    }
+  }
 }
 
 .logo-footer {
   color: $other-color;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
-  }
+}
 .post-adres {
   font-size: 14px;
   line-height: 1.7;
   color: $other-color;
 }
-.contact-us{
+.contact-us {
   font-size: 14px;
   line-height: 1.7;
-  color: $footer-color; 
+  color: $footer-color;
 }
-.join{
+.join {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: $other-color;  
+  color: $other-color;
 }
 address {
-  font-style: normal
+  font-style: normal;
 }
 .padding {
   padding-top: 94px;
@@ -79,29 +121,41 @@ address {
   line-height: 1.875;
   letter-spacing: 0.06em;
   fill: $other-color;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &:hover,&:focus {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  @include for-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &:hover,
+  &:focus {
     background-color: $other-color;
     color: $accent-color;
-    fill: $accent-color;}
+    fill: $accent-color;
+  }
 }
 .send-item-svg {
   fill: currentColor;
-  &:hover,&:focus {fill: $accent-color;}
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
 }
 
 .sign-form-input {
   height: 50px;
   width: 358px;
   margin-right: 12px;
-  background: #2F303A;
+  background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  padding-left: 16px;
+  margin-bottom: 20px;
+  @include for-size(desktop) {
+    padding-left: 16px;
+  }
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-
