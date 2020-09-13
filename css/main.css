@@ -836,10 +836,10 @@ address {
 
 @media (min-width: 768px) {
   .section-team-list {
-    max-width: 738px;
-    flex-wrap: wrap;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -855,9 +855,24 @@ address {
 .section-team-list > li {
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  width: 354px;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+  .section-team-list > li {
+    margin-left: 0;
+  }
+  .section-team-list > li:not(:nth-child(2n + 2)) {
+    margin-right: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-team-list > li:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .team {
@@ -871,14 +886,14 @@ address {
 }
 
 .team-foto {
-  width: 450px;
+  width: 100%;
   height: 460px;
 }
 
 @media (min-width: 768px) {
   .team-foto {
-    width: 739px;
-    height: 780px;
+    width: 100%;
+    height: 374px;
   }
 }
 
@@ -928,7 +943,7 @@ address {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 @media (min-width: 768px) {

@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 
   @include for-size(tablet-landscape) {
     max-width: 738px;
