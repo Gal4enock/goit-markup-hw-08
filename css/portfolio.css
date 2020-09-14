@@ -211,6 +211,10 @@ nav {
   align-items: center;
 }
 
+.site-nav-item:hover, .site-nav-item:focus {
+  color: #2196F3;
+}
+
 header {
   border: 1px solid #ececec;
   padding-bottom: 25px;
@@ -380,6 +384,10 @@ header .header-site-address a:hover, header .header-site-address a:focus {
 
 .menu-button.is-open .toclose {
   display: block;
+}
+
+.site-nav-item:focus {
+  color: #2196F3;
 }
 
 /* стиль футера*/
@@ -674,7 +682,21 @@ address {
   font-weight: 400;
 }
 
+main .padding {
+  padding-top: 60px;
+}
+
+@media (min-width: 1200px) {
+  main .padding {
+    padding-top: 94px;
+  }
+}
+
 /* Позиционирование страницы Портфолио */
+.site-nav-item:focus {
+  color: #2196F3;
+}
+
 .button-list {
   display: flex;
   flex-wrap: wrap;

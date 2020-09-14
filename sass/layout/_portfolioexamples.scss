@@ -16,8 +16,20 @@
   color: $primery-text-color;
   font-weight: 400;
 }
-
+main {
+  .padding {
+    padding-top: 60px;
+    @include for-size(desktop) {
+      padding-top: 94px;
+    }
+  }
+}
 /* Позиционирование страницы Портфолио */
+.site-nav-item {
+  &:focus {
+    color: $accent-color;
+  }
+}
 .button-list {
   display: flex;
   flex-wrap: wrap;

@@ -211,6 +211,10 @@ nav {
   align-items: center;
 }
 
+.site-nav-item:hover, .site-nav-item:focus {
+  color: #2196F3;
+}
+
 /*--------- Выпадающее окно------- */
 .backdrop {
   position: fixed;
@@ -570,6 +574,10 @@ header .header-site-address a:hover, header .header-site-address a:focus {
 
 .menu-button.is-open .toclose {
   display: block;
+}
+
+.site-nav-item:focus {
+  color: #2196F3;
 }
 
 .button-hero {

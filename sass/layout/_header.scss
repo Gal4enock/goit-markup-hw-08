@@ -139,3 +139,8 @@ header .header-site-address {
 .menu-button.is-open .toclose {
   display: block;
 }
+.site-nav-item {
+  &:focus {
+    color: $accent-color;
+  }
+}
