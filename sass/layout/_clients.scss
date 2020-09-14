@@ -26,7 +26,7 @@
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 210px;
+  // width: calc(100% / 2);
   height: 90px;
   transition: all 250ms linear;
   @include for-size(tablet-landscape) {
@@ -63,4 +63,7 @@
   @include for-size(desktop) {
     padding-right: 0;
   }
+}
+.clients-item {
+  width: calc((100% - 30px) / 2);
 }

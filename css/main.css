@@ -955,7 +955,7 @@ address {
 .section-team-list > li {
   margin-left: auto;
   margin-right: auto;
-  width: 450px;
+  width: uato;
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -1072,7 +1072,6 @@ address {
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  width: 210px;
   height: 90px;
   transition: all 250ms linear;
 }
@@ -1126,5 +1125,9 @@ address {
   .clients-item:not(:nth-child(3n + 3)) {
     padding-right: 0;
   }
+}
+
+.clients-item {
+  width: calc((100% - 30px) / 2);
 }
 /*# sourceMappingURL=main.css.map */
