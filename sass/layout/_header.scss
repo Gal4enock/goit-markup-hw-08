@@ -110,6 +110,10 @@ header .header-site-address {
       color: #757575;
     }
   }
+  .current::after {
+    right: 50%;
+    transform: translateX(50%);
+  }
   a {
     font-size: 18px;
     line-height: 1.16;
