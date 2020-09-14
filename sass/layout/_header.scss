@@ -113,6 +113,7 @@ header .header-site-address {
   .current::after {
     right: 50%;
     transform: translateX(50%);
+    margin-top: 8px;
   }
   a {
     font-size: 18px;
