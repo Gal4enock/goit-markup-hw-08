@@ -2,7 +2,7 @@
 .clients-list {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
 
   @include for-size(tablet-landscape) {
@@ -51,11 +51,11 @@
   }
 }
 
-.clients-item:not(:last-child) {
-  @include for-size(desktop) {
-    margin-right: 30px;
-  }
-}
+// .clients-item:not(:last-child) {
+//   @include for-size(desktop) {
+//     // margin-right: 30px;
+//   }
+// }
 .clients-item:not(:nth-child(3n + 3)) {
   @include for-size(tablet-landscape) {
     margin-right: 30px;
@@ -63,6 +63,9 @@
   @include for-size(desktop) {
     margin-right: 0;
   }
+}
+.clients-item:nth-child(2n) {
+  margin-bottom: 30px;
 }
 .clients-item {
   width: calc((100% - 30px) / 2);

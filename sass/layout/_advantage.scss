@@ -20,8 +20,10 @@
   text-transform: none;
 }
 /* позиционирование Преимуществ */
-.advant {
-  padding-bottom: 0px;
+main {
+  .advant {
+    padding-bottom: 0px;
+  }
 }
 .list-details {
   display: block;
@@ -68,6 +70,9 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+}
+.list-details-item:not(:last-child) {
+  margin-bottom: 30px;
 }
 @mixin centred {
   background-repeat: no-repeat;

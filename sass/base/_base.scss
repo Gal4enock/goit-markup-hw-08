@@ -1,18 +1,20 @@
 *,
 *::before,
 *::after {
-  outline:1px solid red ;
+  // outline:1px solid red ;
   margin: 0;
   padding: 0;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   margin: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   color: $primery-text-color;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   letter-spacing: 0.03em;
 }
 ul {
@@ -22,16 +24,17 @@ ul {
 }
 /* стиль ссылок*/
 a {
-  color:$title-text-color;
-    text-decoration: none;
-    transition: all 250ms linear;
-    &:hover, &:focus {
-      color: $accent-color;
-    } 
+  color: $title-text-color;
+  text-decoration: none;
+  transition: all 250ms linear;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 /*кнопка*/
-.button{
-  font-family: 'Roboto', sans-serif;
+.button {
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -42,9 +45,11 @@ a {
   cursor: pointer;
   font-weight: 500;
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $other-color;
-    background-color: $accent-color; }
+    background-color: $accent-color;
+  }
 }
 h3 {
   font-weight: 700;
@@ -56,10 +61,10 @@ h3 {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
   clip: rect(1px, 1px, 1px, 1px);
-  padding:0 !important;
-  border:0 !important;
-  height: 1px !important; 
-  width: 1px !important; 
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
   overflow: hidden;
 }
 /* стиль оглавлений секций*/
@@ -68,8 +73,9 @@ h3 {
   line-height: 1.22;
   margin-bottom: 50px;
 }
-.section-title, .name{
-  color:$title-text-color;
+.section-title,
+.name {
+  color: $title-text-color;
   text-align: center;
   margin-top: 0;
 }
@@ -81,18 +87,19 @@ h3 {
   margin-left: auto;
   margin-right: auto;
 
-@include for-size(tablet-portrait) {  
-  width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
+  @include for-size(tablet-portrait) {
+    width: 480px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include for-size(tablet-landscape) {
+    width: 768px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  @include for-size(desktop) {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
-@include for-size(tablet-landscape) {
-  width: 768px;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-@include for-size(desktop){
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
-}}
