@@ -18,7 +18,15 @@
     <!-- Шапка сайта-->
     <header>
       <div class="container header-container">
-        <a href="./index.html" class="logo"><span class="logo-word">Web</span>Studio</a>
+        <div class="menu-container">
+          <a href="./index.html" class="logo"><span class="logo-word">Web</span>Studio</a>
+          <button type="button" class="menu-button" aria-expanded="false" aria-controls="header-menu" data-menu-button>
+            <svg width="24" height="16">
+              <use href="./img/sprite.svg#menu_burger" class="burger"></use>
+              <use href="./img/sprite.svg#menu_close" class="toclose"></use>
+            </svg>
+          </button>
+        </div>
         <nav>
           <ul class="site-nav">
             <li><a href="./index.html" class="link current">Студия</a></li>
@@ -374,6 +382,34 @@
         </form>
       </div>
     </div>
+    <div class="header-menu" data-menu>
+      <nav>
+        <ul class="site-nav">
+          <li><a href="./index.html" class="link current">Студия</a></li>
+          <li><a href="./portfolio.html">Портфолио</a></li>
+          <li><a href="">Контакты</a></li>
+        </ul>
+      </nav>
+      <address class="header-address-section">
+        <ul class="header-site-address">
+          <li class="header-site-address-item">
+            <a href="mailto:info@devstudio.com">
+              <svg class="header-site-address-svg">
+                <use href="./img/sprite.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="header-site-address-item">
+            <a href="tel:+380991111111">
+              <svg class="header-site-address-svg">
+                <use href="./img/sprite.svg#icon-phone"></use></svg
+              >+38 099 111 11 11</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

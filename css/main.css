@@ -403,6 +403,7 @@ header {
   border: 1px solid #ececec;
   padding-bottom: 25px;
   padding-top: 24px;
+  position: relative;
 }
 
 .header-site-address {
@@ -473,6 +474,56 @@ header {
 .header-container {
   align-items: center;
   display: flex;
+}
+
+.menu-button {
+  border: none;
+  background-color: transparent;
+}
+
+@media (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+.menu-container {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .menu-container {
+    width: auto;
+  }
+}
+
+.toclose {
+  display: none;
+}
+
+.header-menu {
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 480px;
+  height: 453px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  top: 0;
+  right: 0;
+}
+
+.menu-batton.is-open .burger {
+  display: none;
+}
+
+.burger-btn.is-open .toclose {
+  display: block;
 }
 
 .button-hero {
