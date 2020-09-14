@@ -1117,17 +1117,29 @@ address {
 
 @media (min-width: 768px) {
   .clients-item:not(:nth-child(3n + 3)) {
-    padding-right: 30px;
+    margin-right: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .clients-item:not(:nth-child(3n + 3)) {
-    padding-right: 0;
+    margin-right: 0;
   }
 }
 
 .clients-item {
   width: calc((100% - 30px) / 2);
+}
+
+@media (min-width: 768px) {
+  .clients-item {
+    width: 226px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .clients-item {
+    width: 170px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
