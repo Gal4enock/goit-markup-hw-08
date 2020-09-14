@@ -4,7 +4,7 @@ header {
   padding-top: 24px;
   position: relative;
 }
-.header-site-address {
+header .header-site-address {
   display: none;
 
   @include for-size(tablet-landscape) {
@@ -83,22 +83,50 @@ header {
   display: none;
 }
 .header-menu {
-  display: block;
+  display: none;
   opacity: 1;
   visibility: visible;
   position: absolute;
+  background-color: white;
   top: 0;
-  right: 0;
-  width: 480px;
-  height: 453px;
+  // right: 0;
+  width: 100%;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
-  top: 0;
-  right: 0;
+  top: 60;
+  z-index: 1;
+  .site-nav > li {
+    margin-bottom: 40px;
+    margin-right: 0;
+  }
+  .header-site-address {
+    margin-bottom: 60px;
+  }
+  .header-site-address-item:first-child {
+    margin-bottom: 16px;
+  }
+  .header-site-address-item {
+    margin-right: 0;
+    a {
+      color: #757575;
+    }
+  }
+  a {
+    font-size: 18px;
+    line-height: 1.16;
+    letter-spacing: 0.02em;
+  }
 }
-.menu-batton.is-open .burger {
+.header-menu.is-open {
+  display: block;
+  top: 60px;
+  z-index: 1;
+  text-align: center;
+  padding-top: 60px;
+}
+.menu-button.is-open .burger {
   display: none;
 }
 
-.burger-btn.is-open .toclose {
+.menu-button.is-open .toclose {
   display: block;
 }
