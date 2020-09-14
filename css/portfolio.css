@@ -293,6 +293,10 @@ header .header-site-address a:hover, header .header-site-address a:focus {
   background-color: transparent;
 }
 
+.menu-button:hover, .menu-button:focus {
+  fill: #2196F3;
+}
+
 @media (min-width: 768px) {
   .menu-button {
     display: none;

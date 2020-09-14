@@ -66,6 +66,10 @@ header .header-site-address {
 .menu-button {
   border: none;
   background-color: transparent;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
   @include for-size(tablet-landscape) {
     display: none;
   }
