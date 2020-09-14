@@ -98,15 +98,33 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="todo-section-list">
             <li class="todo-list-item">
-              <img src="./img/comp.jpg" alt="ноутбук" width="370" height="294" />
+              <div class="container">
+                <picture class="picture">
+                  <source srcset="./img/comp.webp 1x, ./img/comp450@2x.webp 2x" media="(min-width: 1200px)"
+                    type="image/webp">
+                  <source srcset="./img/comp.jpg 1x, ./img/comp450@2x.jpg 2x" media="(min-width: 1200px)">           
+                  <img src="./img/comp.jpg" alt="retina picture" class="picture-img">
+                </picture>
+              <!-- <img src="./img/comp.jpg" alt="ноутбук" width="370" height="294" /> -->
+
               <p class="todo-description">десктопные приложения</p>
             </li>
             <li class="todo-list-item">
-              <img src="./img/phone.jpg" alt="мобильный телефон" width="370" height="294" />
+              <picture class="picture">
+                <source srcset="./img/phone.webp 1x, ./img/phone450@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/phone.jpg 1x, ./img/phone450@2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./img/phone.jpg" alt="retina picture" class="picture-img">
+              </picture>
+              <!-- <img src="./img/phone.jpg" alt="мобильный телефон" width="370" height="294" /> -->
               <p class="todo-description">мобильные приложения</p>
             </li>
             <li class="todo-list-item">
-              <img src="./img/nout.jpg" alt="компьютерный монитор" width="370" height="294" />
+              <picture class="picture">
+                <source srcset="./img/nout.webp 1x, ./img/nout450@2x.webp 2x" media="(min-width: 1200px)" type="image/webp">
+                <source srcset="./img/nout.jpg 1x, ./img/nout450@2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./img/nout.jpg" alt="retina picture" class="picture-img">
+              </picture>
+              <!-- <img src="./img/nout.jpg" alt="компьютерный монитор" width="370" height="294" /> -->
               <p class="todo-description">дизайнерские решения</p>
             </li>
           </ul>
