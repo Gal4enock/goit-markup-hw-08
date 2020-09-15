@@ -1,5 +1,7 @@
 /*--------- Выпадающее окно------- */
 .backdrop {
+  display: flex;
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -10,15 +12,17 @@
   // overflow-y: auto;
 }
 .modal {
-  display: block;
-  left: 50%;
-  top: 20%;
+  position: static;
+  margin: auto;
+  // display: block;
+  // left: 50%;
+  // top: 20%;
   transform: translateY(50%);
   // top: 10%;
   // top: 0;
   // bottom: auto;
   bottom: 0;
-  overflow: hidden auto;
+  // overflow: hidden auto;
   padding-top: 20px;
   @media screen and (min-width: 320px) and (max-width: 767px) {
     max-width: 450px;
@@ -27,16 +31,16 @@
   width: 100%;
   max-width: 581px;
   // height: auto;
-  max-height: 581px;
+  // max-height: 581px;
   // z-index: 1;
   background-color: $other-color;
-  position: absolute;
+  // position: absolute;
   // left: 50%;
   // top: 10%;
   @include for-size(tablet-landscape) {
     // top: 21%;
   }
-  transform: translateX(-50%) scale(1);
+  transform: scale(1);
   transition: 0.7s steps(3, end);
   .close {
     display: flex;

@@ -203,6 +203,7 @@ header .site-nav a:hover, header .site-nav a:focus {
   height: 4px;
   margin-top: 28px;
   position: absolute;
+  top: 100%;
 }
 
 /* Расположение шапки */
@@ -375,7 +376,7 @@ header .header-site-address a:hover, header .header-site-address a:focus {
 .header-menu .current::after {
   right: 50%;
   transform: translateX(50%);
-  margin-top: 8px;
+  top: 100%;
 }
 
 .header-menu a {

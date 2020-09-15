@@ -203,6 +203,7 @@ header .site-nav a:hover, header .site-nav a:focus {
   height: 4px;
   margin-top: 28px;
   position: absolute;
+  top: 100%;
 }
 
 /* Расположение шапки */
@@ -217,6 +218,8 @@ nav {
 
 /*--------- Выпадающее окно------- */
 .backdrop {
+  display: flex;
+  overflow: auto;
   position: fixed;
   top: 0;
   left: 0;
@@ -227,19 +230,15 @@ nav {
 }
 
 .modal {
-  display: block;
-  left: 50%;
-  top: 20%;
+  position: static;
+  margin: auto;
   transform: translateY(50%);
   bottom: 0;
-  overflow: hidden auto;
   padding-top: 20px;
   width: 100%;
   max-width: 581px;
-  max-height: 581px;
   background-color: #FFFFFF;
-  position: absolute;
-  transform: translateX(-50%) scale(1);
+  transform: scale(1);
   transition: 0.7s steps(3, end);
 }
 
@@ -575,7 +574,7 @@ header .header-site-address a:hover, header .header-site-address a:focus {
 .header-menu .current::after {
   right: 50%;
   transform: translateX(50%);
-  margin-top: 8px;
+  top: 100%;
 }
 
 .header-menu a {
