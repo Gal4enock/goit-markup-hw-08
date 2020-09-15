@@ -7,9 +7,15 @@
   width: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   transition: 1s linear;
+  // overflow-y: auto;
 }
 .modal {
   display: block;
+  overflow-y: auto;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 450px;
+  }
+
   width: 100%;
   max-width: 528px;
   height: 581px;
@@ -18,7 +24,8 @@
   left: 50%;
   top: 10%;
   @include for-size(tablet-landscape) {
-  top: 21%;}
+    top: 21%;
+  }
   transform: translateX(-50%) scale(1);
   transition: 0.7s steps(3, end);
   .close {
@@ -35,20 +42,24 @@
     right: 10px;
     align-items: center;
     justify-content: center;
-    outline: none;}
+    outline: none;
+  }
 }
 .cross {
   width: 18px;
   height: 18px;
   cursor: pointer;
-  &:hover,&:focus {
+  &:hover,
+  &:focus {
     fill: $accent-color;
-    outline: none;}
+    outline: none;
+  }
 }
 .is-hidden {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
   .modal {
-    transform: translateX(-50%) scale(0.5);}
+    transform: translateX(-50%) scale(0.5);
+  }
 }
