@@ -804,6 +804,7 @@ main .padding {
 }
 
 .overlay {
+  overflow-y: auto;
   padding: 63px 24px;
   margin-right: 0;
   width: 100%;
