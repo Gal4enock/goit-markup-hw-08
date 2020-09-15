@@ -22,14 +22,14 @@
   @media screen and (min-device-pixel-ratio: 1),
     screen and (min-resolution: 96dpi),
     screen and (min-resolution: 1dppx) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png),
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/mobile-bg-min.jpg);
     // max-width: 1600px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png),
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../img/mobile-bg@2x-min.jpg);
     // max-width: 1600px;
   }
@@ -37,14 +37,14 @@
     @media screen and (min-device-pixel-ratio: 1),
       screen and (min-resolution: 96dpi),
       screen and (min-resolution: 1dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png),
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/tablet-bg-min.jpg);
       // max-width: 1600px;
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png),
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/tablet-bg@2x-min.jpg);
     }
   }
@@ -52,14 +52,14 @@
     @media screen and (min-device-pixel-ratio: 1),
       screen and (min-resolution: 96dpi),
       screen and (min-resolution: 1dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png),
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/Background.jpg);
       max-width: 1600px;
     }
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/Overlayoverlay.png),
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../img/desktop-bg@2x-min.jpg);
     }
   }
