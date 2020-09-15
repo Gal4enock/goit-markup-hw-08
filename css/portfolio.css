@@ -217,9 +217,23 @@ nav {
 
 header {
   border: 1px solid #ececec;
-  padding-bottom: 25px;
-  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-top: 15px;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 21px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding-bottom: 26px;
+    padding-top: 25px;
+  }
 }
 
 header .header-site-address {

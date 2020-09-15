@@ -234,9 +234,15 @@ nav {
   background-color: #FFFFFF;
   position: absolute;
   left: 50%;
-  top: 21%;
+  top: 10%;
   transform: translateX(-50%) scale(1);
   transition: 0.7s steps(3, end);
+}
+
+@media (min-width: 768px) {
+  .modal {
+    top: 21%;
+  }
 }
 
 .modal .close {
@@ -407,9 +413,23 @@ nav {
 
 header {
   border: 1px solid #ececec;
-  padding-bottom: 25px;
-  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-top: 15px;
   position: relative;
+}
+
+@media (min-width: 768px) {
+  header {
+    padding-bottom: 21px;
+    padding-top: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding-bottom: 26px;
+    padding-top: 25px;
+  }
 }
 
 header .header-site-address {

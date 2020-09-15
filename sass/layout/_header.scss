@@ -1,7 +1,15 @@
 header {
   border: 1px solid #ececec;
-  padding-bottom: 25px;
-  padding-top: 24px;
+  padding-bottom: 16px;
+  padding-top: 15px;
+  @include for-size(tablet-landscape) {
+    padding-bottom: 21px;
+    padding-top: 20px;
+  }
+  @include for-size(desktop) {
+    padding-bottom: 26px;
+    padding-top: 25px;
+  }
   position: relative;
 }
 header .header-site-address {

@@ -16,7 +16,9 @@
   background-color: $other-color;
   position: absolute;
   left: 50%;
-  top: 21%;
+  top: 10%;
+  @include for-size(tablet-landscape) {
+  top: 21%;}
   transform: translateX(-50%) scale(1);
   transition: 0.7s steps(3, end);
   .close {
